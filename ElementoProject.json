@@ -1,0 +1,1308 @@
+{
+  "id": "project_1",
+  "name": "Your first app",
+  "kind": "Project",
+  "properties": {},
+  "elements": [
+    {
+      "id": "app_1",
+      "name": "Main App",
+      "kind": "App",
+      "properties": {},
+      "elements": [
+        {
+          "id": "page_1",
+          "name": "Main Page",
+          "kind": "Page",
+          "properties": {},
+          "elements": [
+            {
+              "id": "text_1",
+              "name": "Title",
+              "kind": "Text",
+              "properties": {
+                "content": "Hello You",
+                "fontSize": 24
+              }
+            },
+            {
+              "id": "textinput_1",
+              "name": "Your Name",
+              "kind": "TextInput",
+              "properties": {},
+              "elements": []
+            },
+            {
+              "id": "text_53",
+              "name": "Text 53",
+              "kind": "Text",
+              "properties": {
+                "content": {
+                  "expr": "'Hello there, ' + YourName"
+                }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_TOOLS",
+      "name": "Tools",
+      "kind": "ToolFolder",
+      "properties": {},
+      "elements": [
+        {
+          "id": "tool_1",
+          "name": "Tutorial",
+          "kind": "Tool",
+          "properties": {
+            "showWhenProjectOpened": true,
+            "maxWidth": "60em",
+            "startupAction": {
+              "expr": "Editor.SetOptions({showBeforeActions: true,\nshowWithPointer: true, delay: 250})"
+            }
+          },
+          "elements": [
+            {
+              "id": "page_2",
+              "name": "Start Page",
+              "kind": "Page",
+              "properties": {},
+              "elements": [
+                {
+                  "id": "text_2",
+                  "name": "Title",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Creating your first app with Elemento",
+                    "fontSize": 24
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_3",
+                  "name": "Para 1",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Congratulations on deciding to dive in to Elemento!"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_4",
+                  "name": "Para 2",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "This short guide will take you step-by-step through creating a really simple Elemento app, called Hello You.  The app just asks for your name,  and then displays \"Hello, Jo\" (or whatever you tell it you are called)."
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_5",
+                  "name": "Para 3",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "You will need:\n- A computer with a good size screen - Full HD (1920 x 1024) is best\n- To be using an up to date version of the Chrome browser\n- About 5 minutes"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_37",
+                  "name": "Para 4",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Let's get started - click the Next button below"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "button_1",
+                  "name": "Next Button",
+                  "kind": "Button",
+                  "properties": {
+                    "content": "Next",
+                    "appearance": "outline",
+                    "action": {
+                      "expr": "ShowPage(HowtoUsePage)"
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "page_6",
+              "name": "How to Use Page",
+              "kind": "Page",
+              "properties": {},
+              "elements": [
+                {
+                  "id": "text_33",
+                  "name": "Title",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "How to Use this Tutorial",
+                    "fontSize": 24
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_34",
+                  "name": "Para 1",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "There is a lot to see on this screen - the next page explains what you are looking at."
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_35",
+                  "name": "Para 2",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Each page contains detailed instructions to complete that step.  \nIf you can't see what any instruction means, click the Show Me link beside it.  "
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_36",
+                  "name": "Para 3",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "You can also click the Help button at the top of the page at any time to find further information about anything you are doing in the tutorial. "
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_38",
+                  "name": "Para 4",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "You can move around the tutorial with the Previous and Next buttons at the bottom of each page."
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "layout_29",
+                  "name": "Buttons",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "button_35",
+                      "name": "Previous",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Previous",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(StartPage)"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_34",
+                      "name": "Next Button",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Next",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(WhatYouSeePage)"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "page_7",
+              "name": "What You See Page",
+              "kind": "Page",
+              "properties": {},
+              "elements": [
+                {
+                  "id": "text_39",
+                  "name": "Title",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "What you can see in the Studio",
+                    "fontSize": 24
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "layout_31",
+                  "name": "Navigator",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_44",
+                      "name": "Explanation",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Navigator\nThis shows you the parts of the app and lets you move around to work on each element"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_38",
+                      "name": "Show Me 1",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Show('treeItem')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_32",
+                  "name": "Properties",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_45",
+                      "name": "Explanation",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Properties panel\nThis shows the settings for the element you select in the Navigator"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_39",
+                      "name": "Show Me 2",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Click('treeItem', 'Main Page')\nEditor.Show('propertyField')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_33",
+                  "name": "Preview",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_46",
+                      "name": "Explanation",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Preview panel\nThis shows the app you are building, running on the page"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_40",
+                      "name": "Show Me 3",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Preview.Show('MainApp')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_34",
+                  "name": "Menu",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_47",
+                      "name": "Explanation",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Menu buttons\nThese let you do the various actions you need, like in most software you have used before"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_41",
+                      "name": "Show Me 4",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Show('button')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "text_40",
+                  "name": "Para 1",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Tools window\nThat's this part you are looking at.  It shows things like this tutorial, and also Help."
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_42",
+                  "name": "Para 2",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Right now the app you are working on is like a new, empty app you have just created.  \nOn the next page you will start changing it."
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "layout_30",
+                  "name": "Buttons",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "button_36",
+                      "name": "Previous",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Previous",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(HowtoUsePage)"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_37",
+                      "name": "Next Button",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Next",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(Step1Page)"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "page_3",
+              "name": "Step 1 Page",
+              "kind": "Page",
+              "properties": {},
+              "elements": [
+                {
+                  "id": "text_6",
+                  "name": "Heading",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Step 1 - Change the Title",
+                    "fontSize": 24
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "layout_1",
+                  "name": "Step 1",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_7",
+                      "name": "Para 1",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Find the Main Page item in the Navigator on the left of the screen."
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_3",
+                      "name": "Show Item",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Show('treeItem', 'Main Page')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_2",
+                  "name": "Step 2",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_10",
+                      "name": "Para 1",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Click the \"+\" to the left of Main Page to expand it."
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_4",
+                      "name": "Expand Item",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.EnsureTreeItemsExpanded('treeItem', 'Main Page')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_3",
+                  "name": "Step 3",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_11",
+                      "name": "Para 1",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Click on the Title item."
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_5",
+                      "name": "Show link",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Click('treeItem', 'Title')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_4",
+                  "name": "Step 4",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_12",
+                      "name": "Instruction",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Click on the Content box in the Properties Panel"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_6",
+                      "name": "Show Me 4",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Click('propertyField', 'Content')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_5",
+                  "name": "Step 5",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_13",
+                      "name": "Instruction",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Change the Content to 'Hello You' (or whatever you want to call your app)"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_7",
+                      "name": "Show Me 5",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.SetValue('propertyField', 'Content', 'Hello You')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_6",
+                  "name": "Step 6",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_14",
+                      "name": "Instruction",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "You will see the Title change in the Preview"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_8",
+                      "name": "Show Me 6",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Preview.Show('Title')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_13",
+                  "name": "Buttons",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "button_16",
+                      "name": "Previous",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Previous",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(WhatYouSeePage)"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_2",
+                      "name": "Next Button",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Next",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(Step2Page)"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "page_4",
+              "name": "Step 2 Page",
+              "kind": "Page",
+              "properties": {},
+              "elements": [
+                {
+                  "id": "text_15",
+                  "name": "Heading",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Step 2 - Add a box to enter your name",
+                    "fontSize": 24
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "layout_14",
+                  "name": "Step 1",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_16",
+                      "name": "Para 1",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Make sure the Title item is still selected (orange background), and click on it again if not"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_17",
+                      "name": "Show Me 21",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Show('treeItem', 'Title')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_15",
+                  "name": "Step 2",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_17",
+                      "name": "Para 1",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Click the Insert menu button"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_18",
+                      "name": "Show Me 22",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Click('button', 'Insert')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_16",
+                  "name": "Step 3",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_18",
+                      "name": "Para 1",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Click After on the left of the menu that appears"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_19",
+                      "name": "Show Me 23",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Click('menuItem', 'After')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_17",
+                  "name": "Step 4",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_19",
+                      "name": "Instruction",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Click Text Input on the right of the menu"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_20",
+                      "name": "Show Me 24",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Click('menuItem', 'Text Input')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_19",
+                  "name": "Step 5",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_21",
+                      "name": "Instruction",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Click the Name box at the top of the Properties panel"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_22",
+                      "name": "Show Me 26",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Click('propertyField', 'Name')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_18",
+                  "name": "Step 6",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_20",
+                      "name": "Instruction",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Change the Name to 'Your Name'.\nYou need to press Enter after this change."
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_21",
+                      "name": "Show Me 25",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.SetValue('propertyField', 'Name', 'Your Name')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_20",
+                  "name": "Buttons",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "button_23",
+                      "name": "Previous 2",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Previous",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(Step1Page)"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_24",
+                      "name": "Next 2",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Next",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(Step3Page)"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "page_5",
+              "name": "Step 3 Page",
+              "kind": "Page",
+              "properties": {},
+              "elements": [
+                {
+                  "id": "text_22",
+                  "name": "Heading",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Step 3 - Display the message",
+                    "fontSize": 24
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_29",
+                  "name": "Explanation",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "In this step, you are going to add a line of text with the Hello greeting.  It uses a simple formula to make the message."
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "layout_21",
+                  "name": "Step 1",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_23",
+                      "name": "Para 1",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Make sure the Your Name item is still selected in the Navigator, and click on it again if not"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_25",
+                      "name": "Show Me 31",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Show('treeItem', 'Your Name')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_22",
+                  "name": "Step 2",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_24",
+                      "name": "Para 1",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Click the Insert menu button"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_26",
+                      "name": "Show Me 32",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Click('button', 'Insert')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_23",
+                  "name": "Step 3",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_25",
+                      "name": "Para 1",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Click After on the left of the menu that appears"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_27",
+                      "name": "Show Me 33",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Click('menuItem', 'After')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_24",
+                  "name": "Step 4",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_26",
+                      "name": "Instruction",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Click Text on the right of the menu"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_28",
+                      "name": "Show Me 34",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Click('menuItem', 'Text$')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_25",
+                  "name": "Step 5",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_27",
+                      "name": "Instruction",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Click the ABC button to the left of the Content box at the top of the Properties panel.\nIt should change to FX= (for a Formula).  Don't worry about the red error message."
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_29",
+                      "name": "Show Me 35",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.Click('propertyTypeButton', 'Content')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_26",
+                  "name": "Step 6",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_28",
+                      "name": "Instruction",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Change the Content formula to exactly what is on the next line:\n 'Hello there, ' + YourName"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_30",
+                      "name": "Show Me 36",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Editor.SetValue('propertyField', 'Content', \"'Hello there, ' + YourName\")"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "layout_28",
+                  "name": "Step 7",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "text_32",
+                      "name": "Instruction",
+                      "kind": "Text",
+                      "properties": {
+                        "content": "Type something in the Your Name box, and watch the greeting below change as you type\n"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_33",
+                      "name": "Show Me 37",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Show me",
+                        "appearance": "link",
+                        "action": {
+                          "expr": "Preview.SetValue('YourName', 'Alexandra')"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "text_31",
+                  "name": "Step 7",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Your text here"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "layout_27",
+                  "name": "Buttons",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "button_31",
+                      "name": "Previous 3",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Previous",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(Step2Page)"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_32",
+                      "name": "Next 3",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Next",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(FinishPage)"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "page_8",
+              "name": "Finish Page",
+              "kind": "Page",
+              "properties": {},
+              "elements": [
+                {
+                  "id": "text_48",
+                  "name": "Title",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "You've got there!",
+                    "fontSize": 24
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_49",
+                  "name": "Para 1",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Congratulations - you have built your first app with Elemento!  It doesn't do very much, but it is a complete working program."
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_50",
+                  "name": "Para 2",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "This tutorial was intended to give you a flavour of using Elemento, without too much explanation.  Other tutorials will go deeper into why you were doing each step."
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_51",
+                  "name": "Para 3",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "More tutorials and examples will appear regularly to help you improve your skills with Elemento. You can also explore the Help to find a detailed explanation of anything you need to know. "
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_52",
+                  "name": "Para 4",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Thanks for trying Elemento - enjoy the rest of your journey!"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "layout_35",
+                  "name": "Buttons",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "button_42",
+                      "name": "Previous",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Previous",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(Step3Page)"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_43",
+                      "name": "Back to Start Button",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Back to Start",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(StartPage)"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
