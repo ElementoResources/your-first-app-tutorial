@@ -5,13 +5,10 @@ const {React} = Elemento
 // MainPage.js
 function MainPage(props) {
     const pathWith = name => props.path + '.' + name
-    const {Page, TextElement, TextInput} = Elemento.components
-    const YourName = Elemento.useObjectState(pathWith('YourName'), new TextInput.State({}))
+    const {Page, TextElement} = Elemento.components
 
     return React.createElement(Page, {id: props.path},
-        React.createElement(TextElement, {path: pathWith('Title'), fontSize: 24}, 'Hello You'),
-        React.createElement(TextInput, {path: pathWith('YourName'), label: 'Your Name'}),
-        React.createElement(TextElement, {path: pathWith('Text53')}, 'Hello there, ' + YourName),
+        React.createElement(TextElement, {path: pathWith('Title'), fontSize: 24}, 'Main App'),
     )
 }
 

@@ -21,27 +21,9 @@
               "name": "Title",
               "kind": "Text",
               "properties": {
-                "content": "Hello You",
+                "content": "Main App",
                 "fontSize": 24
               }
-            },
-            {
-              "id": "textinput_1",
-              "name": "Your Name",
-              "kind": "TextInput",
-              "properties": {},
-              "elements": []
-            },
-            {
-              "id": "text_53",
-              "name": "Text 53",
-              "kind": "Text",
-              "properties": {
-                "content": {
-                  "expr": "'Hello there, ' + YourName"
-                }
-              },
-              "elements": []
             }
           ]
         }
