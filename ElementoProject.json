@@ -77,7 +77,7 @@
                   "name": "Para 2",
                   "kind": "Text",
                   "properties": {
-                    "content": "This short guide will take you step-by-step through creating a really simple Elemento app, called Hello You.  The app just asks for your name,  and then displays \"Hello, Jo\" (or whatever you tell it you are called)."
+                    "content": "This short guide is intended for complete beginners to programming.  It will take you step-by-step through creating a really simple Elemento app, called Hello You.  It will take about 5 minutes."
                   },
                   "elements": []
                 },
@@ -86,7 +86,7 @@
                   "name": "Para 3",
                   "kind": "Text",
                   "properties": {
-                    "content": "You will need:\n- A computer with a good size screen - Full HD (1920 x 1024) is best\n- To be using an up to date version of the Chrome browser\n- About 5 minutes"
+                    "content": "You will need a computer with a good size screen (Full HD 1920 x 1080 is best) and an up to date version of the Chrome browse"
                   },
                   "elements": []
                 },
@@ -135,7 +135,7 @@
                   "name": "Para 1",
                   "kind": "Text",
                   "properties": {
-                    "content": "There is a lot to see on this screen - the next page explains what you are looking at."
+                    "content": "This is the Elemento Studio screen - there is a lot to see. The next page explains what you are looking at."
                   },
                   "elements": []
                 },
@@ -189,6 +189,96 @@
                     },
                     {
                       "id": "button_34",
+                      "name": "Next Button",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Next",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(HowElementoWorksPage)"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "page_9",
+              "name": "How Elemento Works Page",
+              "kind": "Page",
+              "properties": {},
+              "elements": [
+                {
+                  "id": "text_53",
+                  "name": "Title",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "How Elemento works - in 30 seconds",
+                    "fontSize": 24
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_54",
+                  "name": "Para 1",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Elemento lets you create apps by assembling parts like pages, buttons, input boxes and pieces of text.  These are called \"elements\"."
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_55",
+                  "name": "Para 2",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Each element has properties - settings that control what it looks like and what it does."
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_56",
+                  "name": "Para 3",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Property settings can be plain values, like \"green\" or 20, or they can be formulas.  Formulas are similar to those in a spreadsheet, and they let the app calculate what to show and do as you use it."
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_57",
+                  "name": "Para 4",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "Now lets see how you set up the elements and their properties."
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "layout_36",
+                  "name": "Buttons",
+                  "kind": "Layout",
+                  "properties": {
+                    "horizontal": true
+                  },
+                  "elements": [
+                    {
+                      "id": "button_44",
+                      "name": "Previous",
+                      "kind": "Button",
+                      "properties": {
+                        "content": "Previous",
+                        "appearance": "outline",
+                        "action": {
+                          "expr": "ShowPage(HowtoUsePage)"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "button_45",
                       "name": "Next Button",
                       "kind": "Button",
                       "properties": {
@@ -277,7 +367,7 @@
                         "content": "Show me",
                         "appearance": "link",
                         "action": {
-                          "expr": "Editor.Click('treeItem', 'Main Page')\nEditor.Show('propertyField')"
+                          "expr": "await Editor.Click('treeItem', 'Main Page')\nawait Editor.Show('propertiesPanel')\nPreview.Show()\n"
                         }
                       },
                       "elements": []
@@ -341,7 +431,7 @@
                         "content": "Show me",
                         "appearance": "link",
                         "action": {
-                          "expr": "Editor.Show('button')"
+                          "expr": "Editor.Show('menuButton')"
                         }
                       },
                       "elements": []
@@ -382,7 +472,7 @@
                         "content": "Previous",
                         "appearance": "outline",
                         "action": {
-                          "expr": "ShowPage(HowtoUsePage)"
+                          "expr": "ShowPage(HowElementoWorksPage)"
                         }
                       },
                       "elements": []
@@ -723,7 +813,7 @@
                         "content": "Show me",
                         "appearance": "link",
                         "action": {
-                          "expr": "Editor.Click('button', 'Insert')"
+                          "expr": "Editor.Click('menuButton', 'Insert')"
                         }
                       },
                       "elements": []
@@ -839,7 +929,7 @@
                       "name": "Instruction",
                       "kind": "Text",
                       "properties": {
-                        "content": "Change the Name to 'Your Name'.\nYou need to press Enter after this change."
+                        "content": "Change the Name to the words: 'Your Name'.\nYou need to press Enter after this change."
                       },
                       "elements": []
                     },
@@ -851,7 +941,7 @@
                         "content": "Show me",
                         "appearance": "link",
                         "action": {
-                          "expr": "Editor.SetValue('propertyField', 'Name', 'Your Name')"
+                          "expr": "Editor.SetValue('propertyField', 'Name', 'Your Name[Enter]')"
                         }
                       },
                       "elements": []
@@ -1086,7 +1176,8 @@
                   "name": "Step 6",
                   "kind": "Layout",
                   "properties": {
-                    "horizontal": true
+                    "horizontal": true,
+                    "wrap": true
                   },
                   "elements": [
                     {
@@ -1144,15 +1235,6 @@
                       "elements": []
                     }
                   ]
-                },
-                {
-                  "id": "text_31",
-                  "name": "Step 7",
-                  "kind": "Text",
-                  "properties": {
-                    "content": "Your text here"
-                  },
-                  "elements": []
                 },
                 {
                   "id": "layout_27",
@@ -1223,6 +1305,15 @@
                   "kind": "Text",
                   "properties": {
                     "content": "This tutorial was intended to give you a flavour of using Elemento, without too much explanation.  Other tutorials will go deeper into why you were doing each step."
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "text_58",
+                  "name": "Para 2b",
+                  "kind": "Text",
+                  "properties": {
+                    "content": "If you would like to, please play around with any of the elements and properties, just to see what happens.  You can always start afresh just by downloading this tutorial again"
                   },
                   "elements": []
                 },
